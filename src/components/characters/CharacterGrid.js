@@ -9,7 +9,7 @@ const CharacterGrid = ({ items, isLoading }) => {
   ) : (
     <section className="cards">
       {items.map((item) => (
-        <Link to="details" key={item.char_id}>
+        <Link to={`details/${item.name}`} key={item.char_id}>
           <CharacterItem item={item} />
         </Link>
       ))}
